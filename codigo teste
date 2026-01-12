@@ -1,0 +1,22 @@
+// Criador: Samuel Cassimiro 
+// Data: 04/01/26
+// Tema: Arrays de nomes 
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		string[] nome= new string[5];// variavel das arrays
+		Console.WriteLine("Programa De ARRAYS");// titulo do programa 
+		for (int i = 0; i < 5; i++){// estrutura que sera armazenada os nomes
+		Console.WriteLine("\nDigite um nome:");
+		nome[i] = Console.ReadLine();
+			
+		}
+		for(int j = 0; j < 5 ; j++){// estrutura que exibira os nomes
+		Console.WriteLine("\nNome cadastrado");
+			Console.WriteLine(nome[j]);
+		}
+			}
+		}
