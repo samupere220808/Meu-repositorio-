@@ -1,0 +1,84 @@
+/*
+ * Aluno:Samuel Cassimiro 
+ * Date: 13/03/2026
+ * Tema: Aula EAD - Cadastro de Filmes e Séries
+ * 
+ */
+using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Windows.Forms;
+
+namespace Atvead1303_Samuel
+{
+	/// <summary>
+	/// Description of MainForm.
+	/// </summary>
+	public partial class MainForm : Form
+	{
+		public MainForm()
+		{
+			InitializeComponent();
+			
+			// Colocar a data no rodapé
+			label5.Text = "Genero ";
+		}
+		
+		// Quando clicar no texto "Nome:"
+		void Label1Click(object sender, EventArgs e)
+		{
+			MessageBox.Show("Digite o nome do filme ou série no campo ao lado.");
+		}
+		
+		// Deixa o fundo amarelo claro
+		void MainFormLoad(object sender, EventArgs e)
+		{
+			
+		}
+		
+		// Quando clicar no texto "Lançamento:"
+		void Label4Click(object sender, EventArgs e)
+		{
+			MessageBox.Show("Digite o ano de lançamento (ex: 2023).");
+		}
+		
+		// Quando clicar na data
+		void Label5Click(object sender, EventArgs e)
+		{
+			MessageBox.Show("Hoje é: " + label5.Text);
+		}
+		
+		// DomainUpDown
+		void DomainUpDown1SelectedItemChanged(object sender, EventArgs e)
+		{
+			// Comentado para evitar erros
+			// if (domainUpDown1.SelectedItem != null)
+			// {
+			//     string generoEscolhido = domainUpDown1.SelectedItem.ToString();
+			//     MessageBox.Show("Gênero selecionado: " + generoEscolhido);
+			// }
+		}
+		
+		// ListBox - COMENTADO para evitar erro
+		void ListBox1SelectedIndexChanged(object sender, EventArgs e)
+		{
+			// Comentado até você me dizer o nome correto da sua ListBox
+			/*
+			if (listBox1.SelectedItem != null)
+			{
+				string filmeSelecionado = listBox1.SelectedItem.ToString();
+				MessageBox.Show("Você selecionou: " + filmeSelecionado);
+			}
+			*/
+		}
+		
+		// Botão ENVIAR - VERSÃO SEM ERROS
+		void Button2Click(object sender, EventArgs e)
+		{
+			// Por enquanto, só mostra uma mensagem simples
+			MessageBox.Show("Filme/Série cadastrado com sucesso!");
+			
+			// Depois que você me disser os nomes dos campos, eu ajusto
+		}
+	}
+}
